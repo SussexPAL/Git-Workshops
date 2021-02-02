@@ -1,4 +1,4 @@
-# Basics Workshop
+# Basic Workshop
 
 - Introduce Git (branches, version control, going back in history)
 - PSA: Most, if not all, of the git commands covered in this workshop will have `-h` (aka: `--help`) as an option to see what the command can do
