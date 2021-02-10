@@ -34,7 +34,6 @@ cd <repo-name>
 ### Viewing Changes
 
 - It's nice to double check that you've staged what you should have staged!
-
 - #### Via Git Status
 
 ```properties
