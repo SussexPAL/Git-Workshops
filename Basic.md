@@ -106,3 +106,55 @@ git push <remote-name> head
 - Useful options
   - `-f` _**DANGER**_ force updates the remote and overwrites any more recent changes
   - `-u <remote-name> <branch-name>` links a local branch to a remote branch, so you can then use `git push` and `git pull` without arguments
+
+## Branches
+
+- Branches let you make changes to the codebase on another copy of it, so the changes you push to branch A, will not affect the main branch.
+
+### Creating Branches
+
+- #### Via Git Checkout
+- This will both create the branch as well as switch the current head to that branch
+
+```properties
+git checkout -b <new-branch-name>
+```
+
+### Listing Branches
+
+- This is useful to do to know what branches are available!
+
+```properties
+git branch -a
+```
+
+- This command will show both the local branches (in white) as well as the remote branches (in red)
+
+### Switching Branches
+
+```properties
+git checkout <branch-name>
+```
+
+- Useful options
+  - `-f` _**DANGER**_ this will remove _forever_ the local changes that have not been committed yet
+
+### Merging Branches/Creating A Pull Request
+
+- Create Pull Request
+  - Got the repository page and select a branch.
+  ![Select the branch](imgs/branch-dropdown.png)
+
+  - Click on **'Pull request'**
+  ![Click Pull Request](imgs/pull-request-start-review-button.png)
+
+  - Type a title and description for your pull request and click **'Create Pull Request'**.
+  ![Add description](imgs/pullrequest-description.png)
+
+  - Accept the Pull request by clicking **'Merge pull request'** and then **Confirm Merge**
+  ![Megre the branches](imgs/merge-pull-request.png)
+  - Change back to the main branch and execute `git pull` to see the update changes in the main branch.
+  ```properties
+  git checkout main
+  git pull
+  ```
